@@ -113,6 +113,3 @@ Built by **Powder Financial** (https://powderfi.com)
 
 For questions, support, or feedback: support@powderfi.com
 
-## License
-
-MIT
