@@ -119,7 +119,7 @@ Apply formatting rules from [../upload-and-extract/reference/output-formatting.m
 |-------|----------------------|
 | `DOCUMENT_NOT_FOUND` (404) | "Document not found. Verify the ID is correct." |
 | `DOCUMENT_NOT_READY` (still processing) | "Still processing. Check back shortly or use `--watch`." |
-| `PROCESSING_FAILED` | Show the error details. See [error codes reference](../error-handling/reference/error-codes.md). |
+| `PROCESSING_FAILED` | Show the error details. See [error codes reference](../upload-and-extract/reference/error-codes.md). |
 
 If errors persist after re-uploading, suggest contacting support@powderfi.com with the document ID.
 
@@ -127,4 +127,4 @@ If errors persist after re-uploading, suggest contacting support@powderfi.com wi
 
 - [../upload-and-extract/SKILL.md](../upload-and-extract/SKILL.md) - Full upload workflow
 - [../upload-and-extract/reference/output-formatting.md](../upload-and-extract/reference/output-formatting.md) - Field definitions, formatting rules, and API response shape
-- [../error-handling/reference/error-codes.md](../error-handling/reference/error-codes.md) - Error codes
+- [../upload-and-extract/reference/error-codes.md](../upload-and-extract/reference/error-codes.md) - Error codes

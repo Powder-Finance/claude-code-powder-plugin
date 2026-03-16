@@ -251,7 +251,7 @@ Current status: processing
 When an upload fails:
 
 1. **Read the error message carefully** - it usually tells you exactly what's wrong
-2. **Check error code** in [`error-codes.md`](../../error-handling/reference/error-codes.md)
+2. **Check error code** in [`error-codes.md`](../reference/error-codes.md)
 3. **Verify file prerequisites:**
    - Supported format (.pdf, .xlsx, .png, .jpg, .jpeg)
    - Under 50MB

@@ -5,7 +5,7 @@ Upload financial documents to Powder for automated data extraction. This plugin 
 ## Features
 
 - **4 Slash Commands** for quick access to Powder functionality
-- **3 Skills** for automated document processing workflows
+- **2 Skills** for automated document processing workflows
 - **Automatic CLI Installation** via `/Powder:setup`
 - **Support for Multiple File Types**: PDF, XLSX, PNG, JPG, JPEG (max 50MB)
 
@@ -22,7 +22,6 @@ Upload financial documents to Powder for automated data extraction. This plugin 
 
 - **upload-and-extract**: Automated workflow for uploading documents and polling until extraction completes
 - **data-retrieval**: Fetch and format extracted holdings and transactions data
-- **error-handling**: Troubleshooting guide with all error codes and recovery steps
 
 ## Installation
 

@@ -141,7 +141,7 @@ powder --json status 39011
 | `UNSUPPORTED_FILE_TYPE` | Wrong file format | Convert to supported format (.pdf, .xlsx, .png, .jpg) |
 | `EMPTY_PDF` / `EMPTY_EXCEL` | No extractable content | Check source file has visible content |
 
-See [../error-handling/reference/error-codes.md](../error-handling/reference/error-codes.md) for the full error code reference.
+See [reference/error-codes.md](reference/error-codes.md) for the full error code reference.
 
 **Next Steps:**
 - If fixable → Tell the user what's wrong and suggest they fix the source file and re-upload
@@ -209,4 +209,4 @@ See [reference/output-formatting.md](reference/output-formatting.md) for the ful
 ## Reference Documentation
 
 - [reference/output-formatting.md](reference/output-formatting.md) - Formatting rules and privacy requirements
-- [../error-handling/reference/error-codes.md](../error-handling/reference/error-codes.md) - All error codes with user-facing messages
+- [reference/error-codes.md](reference/error-codes.md) - All error codes with user-facing messages

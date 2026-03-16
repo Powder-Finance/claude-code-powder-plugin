@@ -7,7 +7,7 @@ All notable changes to the Powder Claude Code Plugin will be documented in this 
 ### Added
 - Initial release of the Powder Claude Code plugin
 - 4 slash commands: `/Powder:upload`, `/Powder:data`, `/Powder:status`, `/Powder:setup`
-- 3 skills: `upload-and-extract`, `data-retrieval`, `error-handling`
+- 2 skills: `upload-and-extract`, `data-retrieval`
 - Prerequisite checks across all commands and skills
 - Reference documentation for error codes, data types, output formatting, statement types, and supported formats
 - Example walkthroughs for brokerage statement upload, paginated results, and error recovery

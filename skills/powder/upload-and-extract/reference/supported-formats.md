@@ -117,4 +117,4 @@ When uploading an unsupported file:
 }
 ```
 
-See [`error-codes.md`](../../error-handling/reference/error-codes.md) for all possible errors.
+See [`error-codes.md`](error-codes.md) for all possible errors.
