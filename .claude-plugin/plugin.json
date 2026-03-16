@@ -1,0 +1,11 @@
+{
+  "name": "Powder",
+  "version": "0.1.0",
+  "description": "Upload financial documents to Powder for automated data extraction. Supports brokerage statements, account statements, and more.",
+  "author": {
+    "name": "Powder Financial",
+    "url": "https://powderfi.com"
+  },
+  "repository": "https://github.com/powderfi/claude-code-powder-plugin",
+  "license": "MIT"
+}
