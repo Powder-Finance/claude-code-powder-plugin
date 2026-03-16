@@ -28,7 +28,7 @@ Upload financial documents to Powder for automated data extraction. This plugin 
 ### 1. Add the Powder Marketplace
 
 ```bash
-/plugin marketplace add powderfi/claude-code-powder-plugin
+/plugin marketplace add Powder-Finance/claude-code-powder-plugin
 ```
 
 ### 2. Install the Plugin

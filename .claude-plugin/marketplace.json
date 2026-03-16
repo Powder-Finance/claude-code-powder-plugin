@@ -10,7 +10,7 @@
       "description": "One-click install for Powder CLI + Skills for financial document extraction.",
       "source": {
         "source": "github",
-        "repo": "powderfi/claude-code-powder-plugin"
+        "repo": "Powder-Finance/claude-code-powder-plugin"
       },
       "homepage": "https://powderfi.com"
     }
