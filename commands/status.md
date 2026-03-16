@@ -37,6 +37,7 @@ Map the status field to user-friendly messages:
 - **`failed`**: "✗ Processing failed"
 - **`error`**: "✗ An error occurred"
 - **`closed`**: "Upload was closed or cancelled"
+- **`deleted`**: "Upload was deleted"
 
 ## Response Actions
 
@@ -62,7 +63,7 @@ Map the status field to user-friendly messages:
 Provide a clean, human-readable status summary:
 
 ```
-Upload abc123
+Upload 12345
 Status: Processing
 File: statement_2024.pdf
 Uploaded: 2 minutes ago
@@ -77,18 +78,18 @@ Would you like me to watch this upload until it completes?
 Or for a completed upload:
 
 ```
-✓ Upload abc123 is complete!
+✓ Upload 12345 is complete!
 File: statement_2024.pdf
 Uploaded: 5 minutes ago
 Completed: 2 minutes ago
 
-Run `/Powder:data abc123` to view the extracted data.
+Run `/Powder:data 12345` to view the extracted data.
 ```
 
 Or for a failed upload:
 
 ```
-✗ Upload abc123 failed
+✗ Upload 12345 failed
 File: statement_2024.pdf
 Error: Unsupported file format
 

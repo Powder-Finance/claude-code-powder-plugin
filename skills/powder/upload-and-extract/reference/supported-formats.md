@@ -10,7 +10,6 @@ The Powder CLI accepts the following file formats for upload.
 | **Excel** | `.xlsx` | 50 MB | Exported holdings, transaction logs, portfolio spreadsheets | Modern Excel format only (not .xls). Must not be password-protected. |
 | **PNG** | `.png` | 50 MB | Screenshots of statements, scanned documents | Lossless image format. Best for text clarity. |
 | **JPEG** | `.jpg`, `.jpeg` | 50 MB | Photos of statements, scanned documents | Compressed image format. Ensure text is legible. |
-| **WebP** | `.webp` | 50 MB | Modern web screenshots | Supported but less common. |
 
 ## File Requirements
 
@@ -36,7 +35,7 @@ The Powder CLI accepts the following file formats for upload.
 - Can contain multiple sheets (all will be processed)
 - Must not exceed 50 MB
 
-#### Image Files (PNG, JPEG, WebP)
+#### Image Files (PNG, JPEG)
 - Must contain readable document content
 - Text should be clear and high-resolution (at least 150 DPI recommended)
 - Avoid blurry photos or low-quality scans

@@ -61,6 +61,7 @@ These appear in the `status` field of upload responses:
 
 ### Non-Terminal Statuses (In Progress)
 
+- `pending` - Upload is queued for processing
 - `processing` - File is being processed
 - `in_review` - Processing complete, awaiting manual review
 

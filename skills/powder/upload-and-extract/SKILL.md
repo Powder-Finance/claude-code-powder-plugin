@@ -11,7 +11,7 @@ Automates the complete workflow of uploading financial statements (brokerage, ba
 
 1. **Verify Prerequisites** - Check `powder` CLI is installed and `POWDER_API_TOKEN` is set
 2. **Validate File** - Ensure file exists, is supported type (.pdf/.xlsx/.png/.jpg/.jpeg), and under 50MB
-3. **Upload** - Run `powder --json upload <path> [--type brokerage] [--portfolio <id>]`
+3. **Upload** - Run `powder --json upload <path> [--portfolio <id>]`
 4. **Monitor** - Watch processing with `powder --json status <id> --watch --timeout 600`
 5. **Extract & Format** - On success, fetch data and present as formatted table with totals and anomaly flags
 
@@ -71,11 +71,11 @@ file "$FILE_PATH"
 Execute the upload command with JSON output:
 
 ```bash
-powder --json upload "$FILE_PATH" --type brokerage
+powder --json upload "$FILE_PATH"
 ```
 
 **Optional Flags:**
-- `--type brokerage` - Statement type (default: `brokerage`, currently the only supported type)
+- `--type brokerage` - Statement type (default, currently the only supported type — can be omitted)
 - `--portfolio <id>` - Associate with existing portfolio ID
 
 **Expected Response:**

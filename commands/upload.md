@@ -56,7 +56,7 @@ If either is missing, stop and suggest the user run `/Powder:setup` first.
 ## Example Output
 
 ```
-✓ Upload complete (ID: abc123)
+✓ Upload complete (ID: 12345)
 
 Extracted 42 holdings from statement_2024.pdf
 

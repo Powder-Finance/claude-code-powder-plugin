@@ -53,7 +53,7 @@ If either is missing, stop and suggest the user run `/Powder:setup` first.
 ## Example Output
 
 ```
-42 holdings from Upload abc123
+42 holdings from Upload 12345
 
 | Name                          | Ticker | Account  | Quantity | Statement Value |
 |-------------------------------|--------|----------|----------|-----------------|
