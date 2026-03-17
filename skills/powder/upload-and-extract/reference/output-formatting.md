@@ -27,8 +27,8 @@ Rules for presenting Powder API data to users. **Never show raw JSON.**
         "currency": "USD",
         "investment_type": "Mutual Fund",
         "asset_class_level_1": "Multi-Asset Class",
-        "dividend_yield": 0.016049,
-        "expense_ratio": 0.0042
+        "dividend_yield": 0.0185,
+        "expense_ratio": 0.0008
       }
     ]
   },
@@ -58,7 +58,7 @@ Rules for presenting Powder API data to users. **Never show raw JSON.**
 | `asset_class_level_1` | string \| null | `"Equity"`, `"Fixed Income"`, `"Multi-Asset Class"`, `"Cash & Cash Equivalents"`, `"Alternative"` |
 | `currency` | string | Always `"USD"` currently |
 | `dividend_yield` | number \| null | Annual yield as decimal (e.g., `0.016` = 1.6%) |
-| `expense_ratio` | number \| null | Annual fee as decimal (e.g., `0.0042` = 0.42%). Funds only. |
+| `expense_ratio` | number \| null | Annual fee as decimal (e.g., `0.0008` = 0.08%). Funds only. |
 
 A large gap between `statement_asset_value` and `eod_asset_value` usually means the statement is old, not an error. Null fields → show `N/A` or `-` in tables, skip when summing.
 
