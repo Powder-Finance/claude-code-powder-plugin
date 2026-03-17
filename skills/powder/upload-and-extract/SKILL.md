@@ -33,7 +33,7 @@ Before starting, verify the environment:
 which powder
 
 # Verify auth token is set
-echo $POWDER_API_TOKEN | head -c 10
+test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"
 ```
 
 **Decision Tree:**
@@ -93,8 +93,11 @@ powder --json upload "$FILE_PATH"
 
 **Error Handling:**
 - 401 Unauthorized → Check `POWDER_API_TOKEN` is valid
+- 403 Forbidden → Token valid but lacks permissions, contact support@powderfi.com
 - 413 Payload Too Large → File exceeds 50MB limit
+- 429 Rate Limited → Wait 60 seconds, then retry
 - 400 Bad Request → Check file extension and type
+- 500/503 Server Error → Powder API is down, wait a few minutes and retry
 
 ### Step 3: Watch Processing Status
 

@@ -34,7 +34,7 @@ Before starting, verify the environment:
 which powder
 
 # Verify auth token is set
-echo $POWDER_API_TOKEN | head -c 10
+test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"
 ```
 
 **Decision Tree:**
@@ -117,9 +117,9 @@ Apply formatting rules from [../upload-and-extract/reference/output-formatting.m
 
 | Error | What to Tell the User |
 |-------|----------------------|
-| `DOCUMENT_NOT_FOUND` (404) | "Document not found. Verify the ID is correct." |
-| `DOCUMENT_NOT_READY` (still processing) | "Still processing. Check back shortly or use `--watch`." |
-| `PROCESSING_FAILED` | Show the error details. See [error codes reference](../upload-and-extract/reference/error-codes.md). |
+| 404 Not Found | "Document not found. Verify the upload ID is correct." |
+| Still processing | "Still processing. Check back shortly or use `/Powder:status <id> --watch`." |
+| Processing failed | Show the error details from the status response. See [error codes reference](../upload-and-extract/reference/error-codes.md). |
 
 If errors persist after re-uploading, suggest contacting support@powderfi.com with the document ID.
 

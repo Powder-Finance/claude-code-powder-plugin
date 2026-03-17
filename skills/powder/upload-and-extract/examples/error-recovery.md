@@ -138,9 +138,7 @@ powder --json upload ~/Documents/statement.pdf
    ```
 
 2. **Get a new token:**
-   - Log in to Powder dashboard
-   - Navigate to Settings → API Tokens
-   - Generate new token or copy existing one
+   - Contact support@powderfi.com to request a new API token
 
 3. **Set the environment variable:**
    

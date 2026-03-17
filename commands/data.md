@@ -9,7 +9,7 @@ You are fetching extracted data from a Powder upload for the user.
 
 Before proceeding, verify:
 1. `powder` CLI is installed: run `which powder`
-2. `POWDER_API_TOKEN` environment variable is set: run `echo $POWDER_API_TOKEN | head -c 10`
+2. `POWDER_API_TOKEN` environment variable is set: run `test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"`
 
 If either is missing, stop and suggest the user run `/Powder:setup` first.
 
@@ -21,7 +21,7 @@ If either is missing, stop and suggest the user run `/Powder:setup` first.
 2. **Check Status First**: Run `powder --json status "$UPLOAD_ID"`
    - **If done**: Proceed to fetch data
    - **If processing/in_review**: Tell the user the upload is still processing and offer to watch it: "Would you like me to watch this upload until it completes? I can watch it with `/Powder:status <id> --watch`, or you can check back later."
-   - **If failed/closed**: Report the error and stop
+   - **If failed/closed/error/deleted**: Report the error and stop
 
 3. **Fetch Data**: Run `powder --json data "$UPLOAD_ID"`
    - Parse the JSON response

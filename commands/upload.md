@@ -9,7 +9,7 @@ You are uploading a financial statement to Powder for the user.
 
 Before proceeding, verify:
 1. `powder` CLI is installed: run `which powder`
-2. `POWDER_API_TOKEN` environment variable is set: run `echo $POWDER_API_TOKEN | head -c 10`
+2. `POWDER_API_TOKEN` environment variable is set: run `test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"`
 
 If either is missing, stop and suggest the user run `/Powder:setup` first.
 

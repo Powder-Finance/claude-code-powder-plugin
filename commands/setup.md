@@ -21,7 +21,7 @@ Run: `which powder`
 
 ### 2. Check for API Token
 
-Run: `echo $POWDER_API_TOKEN | head -c 10`
+Run: `test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"`
 
 - **If set** (output is non-empty): Proceed to validation (step 3)
 - **If not set**: Provide instructions:
