@@ -14,16 +14,16 @@ Rules for presenting Powder API data to users. **Never show raw JSON.**
     "portfolio_id": 67890,
     "ownerships": [
       {
-        "name": "VANGUARD TARGET RETIREMENT 2045 FUND",
+        "name": "EXAMPLE TARGET DATE 2045 FUND",
         "account_type": "401k",
-        "account_name": "Fidelity NetBenefits ***",
-        "ticker": "VTIVX",
-        "isin": "US9219097683",
-        "cusip": "921909768",
-        "statement_asset_value": 245000.50,
-        "quantity": 6250.125,
-        "statement_price": 39.20,
-        "eod_asset_value": 237500.47,
+        "account_name": "Brokerage Account ***",
+        "ticker": "EXMPL",
+        "isin": "US0000000000",
+        "cusip": "000000000",
+        "statement_asset_value": 50000.00,
+        "quantity": 1000.000,
+        "statement_price": 50.00,
+        "eod_asset_value": 48500.00,
         "currency": "USD",
         "investment_type": "Mutual Fund",
         "asset_class_level_1": "Multi-Asset Class",
@@ -100,7 +100,7 @@ Holdings:
 ┌──────────────────────────────────────┬────────┬──────────────────────────┬───────────┬─────────────────┐
 │ Name                                 │ Ticker │ Account                  │ Quantity  │ Statement Value │
 ├──────────────────────────────────────┼────────┼──────────────────────────┼───────────┼─────────────────┤
-│ VANGUARD TARGET RETIREMENT 2045   │ VTIVX  │ Fidelity NetBenefits *** │  6,250.13 │     $343,124.17 │
+│ Example Target Date Fund             │ EXMPL  │ Brokerage Account ***    │  1,000.00 │      $50,000.00 │
 └──────────────────────────────────────┴────────┴──────────────────────────┴───────────┴─────────────────┘
 
 Totals:

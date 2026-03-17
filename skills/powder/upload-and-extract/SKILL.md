@@ -189,11 +189,11 @@ Holdings:
 ┌──────────────────────────────────────┬────────┬──────────────────────────┬───────────┬─────────────────┐
 │ Name                                 │ Ticker │ Account                  │ Quantity  │ Statement Value │
 ├──────────────────────────────────────┼────────┼──────────────────────────┼───────────┼─────────────────┤
-│ VANGUARD TARGET RETIREMENT 2045   │ VTIVX  │ Fidelity NetBenefits *** │  6,250.13 │     $343,124.17 │
+│ Example Target Date Fund             │ EXMPL  │ Brokerage Account ***    │  1,000.00 │      $50,000.00 │
 └──────────────────────────────────────┴────────┴──────────────────────────┴───────────┴─────────────────┘
 
 Totals:
-- Statement Value: $343,124.17
+- Statement Value: $50,000.00
 - Current EOD Value: $114,992.97
 - Holdings: 1
 

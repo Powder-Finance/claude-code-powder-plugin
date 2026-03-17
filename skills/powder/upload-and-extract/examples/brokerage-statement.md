@@ -4,7 +4,7 @@ Complete walkthrough of uploading and extracting data from a brokerage statement
 
 ## Example: 401(k) Statement
 
-This example walks through uploading a Fidelity NetBenefits 401(k) statement.
+This example walks through uploading a 401(k) brokerage statement.
 
 ---
 
@@ -70,18 +70,18 @@ powder --json data 12345
     "portfolio_id": 67890,
     "ownerships": [
       {
-        "name": "VANGUARD TARGET RETIREMENT 2045 FUND",
+        "name": "EXAMPLE TARGET DATE 2045 FUND",
         "account_type": "401k",
-        "account_name": "Fidelity NetBenefits ***",
+        "account_name": "Brokerage Account ***",
         "entity": null,
-        "ticker": "VTIVX",
-        "isin": "US9219097683",
-        "cusip": "921909768",
-        "statement_asset_value": 245000.50,
+        "ticker": "EXMPL",
+        "isin": "US0000000000",
+        "cusip": "000000000",
+        "statement_asset_value": 50000.00,
         "statement_cost_basis": null,
-        "quantity": 6250.125,
-        "statement_price": 39.20,
-        "eod_asset_value": 237500.47,
+        "quantity": 1000.000,
+        "statement_price": 50.00,
+        "eod_asset_value": 48500.00,
         "currency": "USD",
         "account_allocation": 1.0,
         "portfolio_allocation": 1.0,
@@ -106,16 +106,16 @@ The extracted data shows:
 
 | Holding | Ticker | Shares | Statement Value | Account Type |
 |---------|--------|--------|-----------------|--------------|
-| Vanguard Target Retirement 2045 Fund | VTIVX | 6,250.125 | $245,000.50 | 401k |
+| Example Target Date 2045 Fund | EXMPL | 1,000.000 | $50,000.00 | 401k |
 
 **Key Fields:**
-- **Investment**: Vanguard target-date retirement fund
-- **Ticker/ISIN**: `VTIVX` / `US9219097683`
-- **Quantity**: 6,250.125 shares
-- **Statement Price**: $39.20 per share
-- **Statement Value**: $245,000.50
-- **EOD Value**: $237,500.47 (end-of-day pricing)
-- **Account**: Fidelity NetBenefits 401(k)
+- **Investment**: Target-date retirement fund
+- **Ticker/ISIN**: `EXMPL` / `US0000000000`
+- **Quantity**: 1,000.000 shares
+- **Statement Price**: $50.00 per share
+- **Statement Value**: $50,000.00
+- **EOD Value**: $48,500.00 (end-of-day pricing)
+- **Account**: Brokerage 401(k)
 - **Asset Class**: Multi-Asset Class (target-date fund)
 - **Expense Ratio**: 0.08%
 - **Dividend Yield**: 1.85%

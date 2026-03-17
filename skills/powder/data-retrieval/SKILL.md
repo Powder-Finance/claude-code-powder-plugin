@@ -82,10 +82,10 @@ powder --json data 12345
     "portfolio_id": 67890,
     "ownerships": [
       {
-        "name": "VANGUARD TARGET RETIREMENT 2045 FUND",
-        "ticker": "VTIVX",
-        "quantity": 6250.125,
-        "statement_asset_value": 245000.50,
+        "name": "EXAMPLE TARGET DATE 2045 FUND",
+        "ticker": "EXMPL",
+        "quantity": 1000.000,
+        "statement_asset_value": 50000.00,
         ...
       }
     ]
