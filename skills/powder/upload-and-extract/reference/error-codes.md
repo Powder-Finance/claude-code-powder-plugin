@@ -73,7 +73,7 @@ Error responses include:
 
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "failed",
   "error": {
     "code": "PASSWORD_PROTECTED_PDF",

@@ -16,7 +16,7 @@ If either is missing, stop and suggest the user run `/Powder:setup` first.
 ## Data Retrieval Workflow
 
 1. **Parse and Validate Arguments**: Extract the upload ID from `$ARGUMENTS`
-   - Upload ID must be numeric only — reject anything containing non-digit characters and tell the user "Upload IDs are numbers (e.g. 39011)"
+   - Upload ID must be numeric only — reject anything containing non-digit characters and tell the user "Upload IDs are numbers (e.g. 12345)"
 
 2. **Check Status First**: Run `powder --json status "$UPLOAD_ID"`
    - **If done**: Proceed to fetch data

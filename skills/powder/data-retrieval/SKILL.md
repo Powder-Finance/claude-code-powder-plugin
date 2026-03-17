@@ -18,7 +18,7 @@ Retrieve and format data from previously uploaded financial documents. Use when 
 ## When to Use This Skill
 
 - User asks to "fetch data for document X"
-- User says "show me what's in document ID 39011"
+- User says "show me what's in document ID 12345"
 - User wants to re-display results from a previous upload
 - User needs to export or analyze holdings from a known document ID
 - Following up after a timeout - document finished processing later
@@ -47,15 +47,15 @@ test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"
 Before fetching data, confirm the document is ready:
 
 ```bash
-powder --json status 39011
+powder --json status 12345
 ```
 
 **Expected Response:**
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "done",
-  "portfolio_id": 42992,
+  "portfolio_id": 67890,
   "closed_at": "2024-01-15T17:23:14.582Z"
 }
 ```
@@ -70,22 +70,22 @@ powder --json status 39011
 Retrieve the first page of results:
 
 ```bash
-powder --json data 39011
+powder --json data 12345
 ```
 
 **Response Structure:**
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "done",
   "data": {
-    "portfolio_id": 42992,
+    "portfolio_id": 67890,
     "ownerships": [
       {
-        "name": "T ROWE PRICE RETIREMENT BLEND 2045 FUND",
-        "ticker": "TRBQX",
-        "quantity": 8832.025,
-        "statement_asset_value": 343124.17,
+        "name": "VANGUARD TARGET RETIREMENT 2045 FUND",
+        "ticker": "VTIVX",
+        "quantity": 6250.125,
+        "statement_asset_value": 245000.50,
         ...
       }
     ]
@@ -106,7 +106,7 @@ powder --json data 39011
 If `count > 100`, fetch remaining pages with `--page 2`, `--page 3`, etc. up to `ceil(count / 100)`. Accumulate all ownerships across pages, then format once.
 
 ```bash
-powder --json data 39011 --page 2
+powder --json data 12345 --page 2
 ```
 
 ### Step 4: Format and Present Data

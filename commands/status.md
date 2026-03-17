@@ -16,7 +16,7 @@ If either is missing, stop and suggest the user run `/Powder:setup` first.
 ## Status Check Workflow
 
 1. **Parse and Validate Arguments**: Extract the upload ID and any flags from `$ARGUMENTS`
-   - Upload ID must be numeric only — reject anything containing non-digit characters and tell the user "Upload IDs are numbers (e.g. 39011)"
+   - Upload ID must be numeric only — reject anything containing non-digit characters and tell the user "Upload IDs are numbers (e.g. 12345)"
    - Optional: `--watch` flag to poll until complete
    - Optional: `--timeout N` to set watch timeout (default 600 seconds)
 

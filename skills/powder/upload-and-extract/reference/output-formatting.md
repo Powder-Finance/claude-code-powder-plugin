@@ -8,22 +8,22 @@ Rules for presenting Powder API data to users. **Never show raw JSON.**
 
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "done",
   "data": {
-    "portfolio_id": 42992,
+    "portfolio_id": 67890,
     "ownerships": [
       {
-        "name": "T ROWE PRICE RETIREMENT BLEND 2045 FUND",
+        "name": "VANGUARD TARGET RETIREMENT 2045 FUND",
         "account_type": "401k",
-        "account_name": "Fidelity NetBenefits *XXXXX1",
-        "ticker": "TRBQX",
-        "isin": "US8727975273",
-        "cusip": "872797527",
-        "statement_asset_value": 343124.17,
-        "quantity": 8832.025,
-        "statement_price": 38.85,
-        "eod_asset_value": 114992.97,
+        "account_name": "Fidelity NetBenefits ***",
+        "ticker": "VTIVX",
+        "isin": "US9219097683",
+        "cusip": "921909768",
+        "statement_asset_value": 245000.50,
+        "quantity": 6250.125,
+        "statement_price": 39.20,
+        "eod_asset_value": 237500.47,
         "currency": "USD",
         "investment_type": "Mutual Fund",
         "asset_class_level_1": "Multi-Asset Class",
@@ -94,13 +94,13 @@ Show `⚠️ Anomalies Detected:` if any of:
 ```
 ✅ Successfully extracted holdings from fidelity-statement.pdf
 
-Found 1 holdings in portfolio 42992
+Found 1 holdings in portfolio 67890
 
 Holdings:
 ┌──────────────────────────────────────┬────────┬──────────────────────────┬───────────┬─────────────────┐
 │ Name                                 │ Ticker │ Account                  │ Quantity  │ Statement Value │
 ├──────────────────────────────────────┼────────┼──────────────────────────┼───────────┼─────────────────┤
-│ T ROWE PRICE RETIREMENT BLEND 2045   │ TRBQX  │ Fidelity NetBenefits *** │  8,832.03 │     $343,124.17 │
+│ VANGUARD TARGET RETIREMENT 2045   │ VTIVX  │ Fidelity NetBenefits *** │  6,250.13 │     $343,124.17 │
 └──────────────────────────────────────┴────────┴──────────────────────────┴───────────┴─────────────────┘
 
 Totals:

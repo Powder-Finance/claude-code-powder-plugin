@@ -81,9 +81,9 @@ powder --json upload "$FILE_PATH"
 **Expected Response:**
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "processing",
-  "portfolio_id": 42992
+  "portfolio_id": 67890
 }
 ```
 
@@ -104,7 +104,7 @@ powder --json upload "$FILE_PATH"
 Monitor the document processing with automatic polling:
 
 ```bash
-powder --json status 39011 --watch --timeout 600
+powder --json status 12345 --watch --timeout 600
 ```
 
 **Flags:**
@@ -132,7 +132,7 @@ powder --json status 39011 --watch --timeout 600
 When processing fails, extract error details:
 
 ```bash
-powder --json status 39011
+powder --json status 12345
 ```
 
 **Common Error Scenarios:**
@@ -155,16 +155,16 @@ See [reference/error-codes.md](reference/error-codes.md) for the full error code
 Once status is `done`, retrieve the extracted data:
 
 ```bash
-powder --json data 39011
+powder --json data 12345
 ```
 
 **Response Structure:**
 ```json
 {
-  "id": 39011,
+  "id": 12345,
   "status": "done",
   "data": {
-    "portfolio_id": 42992,
+    "portfolio_id": 67890,
     "ownerships": [...]
   },
   "count": 1,
@@ -183,13 +183,13 @@ powder --json data 39011
 **Example Output:**
 
 ```
-Found 1 holdings in portfolio 42992
+Found 1 holdings in portfolio 67890
 
 Holdings:
 ┌──────────────────────────────────────┬────────┬──────────────────────────┬───────────┬─────────────────┐
 │ Name                                 │ Ticker │ Account                  │ Quantity  │ Statement Value │
 ├──────────────────────────────────────┼────────┼──────────────────────────┼───────────┼─────────────────┤
-│ T ROWE PRICE RETIREMENT BLEND 2045   │ TRBQX  │ Fidelity NetBenefits *** │  8,832.03 │     $343,124.17 │
+│ VANGUARD TARGET RETIREMENT 2045   │ VTIVX  │ Fidelity NetBenefits *** │  6,250.13 │     $343,124.17 │
 └──────────────────────────────────────┴────────┴──────────────────────────┴───────────┴─────────────────┘
 
 Totals:
