@@ -1,0 +1,18 @@
+{
+  "name": "powder-plugin-marketplace",
+  "owner": {
+    "name": "Powder Financial",
+    "url": "https://powderfi.com"
+  },
+  "plugins": [
+    {
+      "name": "powder-plugin",
+      "description": "One-click install for Powder CLI + Skills for financial document extraction.",
+      "source": {
+        "source": "github",
+        "repo": "Powder-Finance/claude-code-powder-plugin"
+      },
+      "homepage": "https://powderfi.com"
+    }
+  ]
+}
