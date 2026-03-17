@@ -109,7 +109,7 @@ If you encounter issues:
 
 ## Credits
 
-Built by **Powder Financial** (https://powderfi.com)
+Built by **Powder** (https://powderfi.com)
 
 For questions, support, or feedback: support@powderfi.com
 
