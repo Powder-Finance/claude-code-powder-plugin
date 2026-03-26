@@ -9,7 +9,7 @@ Automates the complete workflow of uploading financial statements (brokerage, ba
 
 ## Quick Start
 
-1. **Verify Prerequisites** - Check `powder` CLI is installed and `POWDER_API_TOKEN` is set
+1. **Verify Prerequisites** - Check `powder` CLI is installed and API token is configured
 2. **Validate File** - Ensure file exists, is supported type (.pdf/.xlsx/.png/.jpg/.jpeg), and under 50MB
 3. **Upload** - Run `powder --json upload <path> [--portfolio <id>]`
 4. **Monitor** - Watch processing with `powder --json status <id> --watch --timeout 600`
@@ -32,14 +32,19 @@ Before starting, verify the environment:
 # Check powder CLI is available
 which powder
 
-# Verify auth token is set
-test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"
+# Verify auth token is set (checks both plugin config and env var)
+test -n "${POWDER_API_TOKEN:-$CLAUDE_PLUGIN_OPTION_POWDER_API_TOKEN}" && echo "set" || echo "not set"
 ```
 
 **Decision Tree:**
 - ✅ Both available → Proceed to Step 1
 - ❌ `powder` not found → Suggest running `/Powder:setup` to install the CLI
 - ❌ Token not set → Suggest running `/Powder:setup` to configure authentication
+
+**Important: Token Passthrough** — Always prefix `powder` commands with:
+```bash
+POWDER_API_TOKEN="${POWDER_API_TOKEN:-$CLAUDE_PLUGIN_OPTION_POWDER_API_TOKEN}" powder ...
+```
 
 ### Step 1: Validate File
 
@@ -92,7 +97,7 @@ powder --json upload "$FILE_PATH"
 - `portfolio_id` - Portfolio this data belongs to
 
 **Error Handling:**
-- 401 Unauthorized → Check `POWDER_API_TOKEN` is valid
+- 401 Unauthorized → Check API token is valid (plugin config or POWDER_API_TOKEN env var)
 - 403 Forbidden → Token valid but lacks permissions, contact support@powderfi.com
 - 413 Payload Too Large → File exceeds 50MB limit
 - 429 Rate Limited → Wait 60 seconds, then retry

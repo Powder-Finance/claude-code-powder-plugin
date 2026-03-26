@@ -40,7 +40,7 @@ Complete list of error codes returned by the Powder API and CLI.
 
 | Code | Error | When It Occurs | Fix |
 |------|-------|----------------|-----|
-| `401` | Unauthorized | Missing or invalid API token | Set `POWDER_API_TOKEN` environment variable with valid token. |
+| `401` | Unauthorized | Missing or invalid API token | Verify your API token is configured correctly. Re-install the Powder plugin or contact support@powderfi.com. |
 | `403` | Forbidden | Token valid but lacks permissions for this resource | Verify token has correct permissions. Contact admin if needed. |
 | `404` | Not Found | Upload ID doesn't exist or was deleted | Verify upload ID is correct. Check upload wasn't deleted. |
 | `429` | Too Many Requests | Rate limit exceeded | Wait 60 seconds before retrying. Reduce request frequency. |

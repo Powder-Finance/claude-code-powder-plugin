@@ -33,14 +33,19 @@ Before starting, verify the environment:
 # Check powder CLI is available
 which powder
 
-# Verify auth token is set
-test -n "$POWDER_API_TOKEN" && echo "set" || echo "not set"
+# Verify auth token is set (checks both plugin config and env var)
+test -n "${POWDER_API_TOKEN:-$CLAUDE_PLUGIN_OPTION_POWDER_API_TOKEN}" && echo "set" || echo "not set"
 ```
 
 **Decision Tree:**
 - ✅ Both available → Proceed to Step 1
 - ❌ `powder` not found → Suggest running `/Powder:setup` to install the CLI
 - ❌ Token not set → Suggest running `/Powder:setup` to configure authentication
+
+**Important: Token Passthrough** — Always prefix `powder` commands with:
+```bash
+POWDER_API_TOKEN="${POWDER_API_TOKEN:-$CLAUDE_PLUGIN_OPTION_POWDER_API_TOKEN}" powder ...
+```
 
 ### Step 1: Verify Document Status
 
