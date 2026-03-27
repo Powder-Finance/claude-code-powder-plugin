@@ -1,5 +1,7 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "powder-plugin-marketplace",
+  "description": "Powder Financial plugins for automated financial document extraction",
   "owner": {
     "name": "Powder Financial",
     "url": "https://powderfi.com"
@@ -8,10 +10,7 @@
     {
       "name": "powder-plugin",
       "description": "One-click install for Powder CLI + Skills for financial document extraction.",
-      "source": {
-        "source": "github",
-        "repo": "Powder-Finance/claude-code-powder-plugin"
-      },
+      "source": ".",
       "homepage": "https://powderfi.com"
     }
   ]
